@@ -1,0 +1,9 @@
+current_users = ["john", "jane", "debbie", "mark", "nolan"]
+new_users = ["John", "Arthur", "Nikita", "Marcus", "Jane"]
+
+for new_user in new_users:
+    new_user = new_user.lower()
+    if new_user in current_users:
+        print(new_user + " is not available, enter a new username")
+    else:
+        print(new_user + " is available")
