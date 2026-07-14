@@ -38,8 +38,8 @@ class Privileges():
     def __init__(self):
         self.privileges = ["Cand add post", "Cand delete post", "Can ban user"]
 
-    def show_privileges(self):
-        print(f"The user {self.full_name} has the privileges bellow: ")
+    def show_privileges(self, user):
+        print(f"The user {user.full_name} has the privileges bellow: ")
         for privilege in self.privileges:
             print(f"-> {privilege}")
 
@@ -51,4 +51,4 @@ class Admin(User):
         self.privileges = Privileges()
 
 nicoli = Admin("Nicoli", "Da Silva", "21/07/2004", "nicoli@gmail.com")
-nicoli.privileges.show_privileges()
+nicoli.privileges.show_privileges(nicoli)
