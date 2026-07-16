@@ -1,0 +1,3 @@
+In Python you can storage data in variables
+In Python you can read files
+In Python you can execute commands in loop
